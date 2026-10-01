@@ -1,0 +1,5 @@
+username: "Admin";
+user_type: AA;
+user_credit: 100.00;
+target_username: "MissingUser";
+target_exists: false;

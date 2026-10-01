@@ -1,0 +1,9 @@
+delete_function: approved;
+seller_exists: false;
+buy_function: rejected;
+warning: "Seller deleted or unavailable.";
+admin_credit: 100.00;
+user_collection: [];
+purchase_credit_transfer: 0.00;
+final_session: null;
+records.length: 2;

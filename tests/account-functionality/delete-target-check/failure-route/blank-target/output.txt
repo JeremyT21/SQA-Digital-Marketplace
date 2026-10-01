@@ -1,0 +1,10 @@
+delete_function: rejected;
+warning: "Target username required.";
+target_exists: true;
+target_user_type: BS;
+target_credit: 0.00;
+target_collection: [];
+target_listings: [];
+admin_credit: 100.00;
+final_session: null;
+records.length: 1;

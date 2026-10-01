@@ -1,0 +1,17 @@
+user_1_username: "Buyer";
+user_1_type: BS;
+user_1_credit: 100.00;
+user_2_username: "Seller";
+user_2_type: SS;
+user_2_credit: 100.00;
+accounts.length: 2;
+game: "GameOne";
+seller_username: "Seller";
+price: 30.00;
+owner_username: "Buyer";
+owned_game: "GameOne";
+collections.length: 1;
+text: "Buyer owns GameOne.";
+padding_in_values: false;
+END_displayed_as_entry: false;
+records.length: 0;

@@ -1,0 +1,5 @@
+addcredit: rejected;
+warning: "Maximum credit exceeded.";
+buyer_credit: 999999.98;
+final_session: null;
+records.length: 1;

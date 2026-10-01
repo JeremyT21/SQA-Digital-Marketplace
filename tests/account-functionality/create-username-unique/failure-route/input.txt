@@ -1,0 +1,9 @@
+username: "Admin";
+user_type: AA;
+user_credit: 100.00;
+existing_username: "Buyer";
+existing_user_type: BS;
+existing_user_credit: 100.00;
+new_username: "Buyer";
+new_user_type: BS;
+new_user_initial_credit: 0.00;

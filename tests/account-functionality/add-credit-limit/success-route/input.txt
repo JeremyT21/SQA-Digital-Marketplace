@@ -1,0 +1,6 @@
+username: "Buyer";
+user_type: BS;
+starting_credit: 100.00;
+session_credit_already_added: 0.00;
+first_credit_add: 600.00;
+second_credit_add: 400.00;

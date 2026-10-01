@@ -1,0 +1,6 @@
+login: approved;
+active_user_after_login: "Buyer";
+active_type_after_login: BS;
+buyer_credit: 100.00;
+final_session: null;
+records.length: 1;

@@ -1,0 +1,5 @@
+login: rejected;
+warning: "User does not exist.";
+missing_user_exists: false;
+final_session: null;
+records.length: 0;

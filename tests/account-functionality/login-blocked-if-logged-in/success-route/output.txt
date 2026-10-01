@@ -1,0 +1,8 @@
+first_login: approved;
+first_logout: approved;
+second_login: approved;
+user_1_credit: 100.00;
+user_2_credit: 100.00;
+final_session: null;
+first_record_return.length: 1;
+end_record_return.length: 1;

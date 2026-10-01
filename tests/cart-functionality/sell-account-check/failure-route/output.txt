@@ -1,0 +1,7 @@
+sell_function: rejected;
+warning: "Account cannot sell.";
+accepted_listings: [];
+new_game_exists: false;
+buyer_credit: 100.00;
+final_session: null;
+records.length: 1;

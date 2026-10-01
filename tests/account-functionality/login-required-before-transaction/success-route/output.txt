@@ -1,0 +1,6 @@
+login: accepted;
+addcredit: approved;
+account_username: "Buyer";
+account_type: BS;
+credit_added: 10.00;
+final_credit: 110.00;

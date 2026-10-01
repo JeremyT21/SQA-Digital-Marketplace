@@ -1,0 +1,9 @@
+displayed_game: "GameOne";
+displayed_seller_username: "Seller";
+displayed_price: 30.00;
+displayed_game_count: 1;
+buyer_credit: 100.00;
+seller_credit: 100.00;
+buyer_collection: [];
+final_session: null;
+records.length: 1;

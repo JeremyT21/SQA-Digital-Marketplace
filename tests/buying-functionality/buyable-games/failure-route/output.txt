@@ -1,0 +1,7 @@
+displayed_games: [];
+displayed_game_count: 0;
+text: "No games available.";
+buyer_credit: 100.00;
+buyer_collection: [];
+final_session: null;
+records.length: 1;

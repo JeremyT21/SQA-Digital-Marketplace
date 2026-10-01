@@ -1,0 +1,5 @@
+username: "Buyer";
+user_type: BS;
+user_credit: 100.00;
+buyer_collection: [];
+available_games: [];

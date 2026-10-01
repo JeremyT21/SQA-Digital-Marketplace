@@ -1,0 +1,5 @@
+username: "Buyer";
+user_type: BS;
+starting_credit: 999999.98;
+session_credit_already_added: 0.00;
+credit_add: 0.01;

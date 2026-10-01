@@ -1,0 +1,8 @@
+buy_function: approved;
+admin_credit: 70.00;
+seller_exists: true;
+seller_credit: 130.00;
+user_collection: ["GameOne"];
+seller_collection: [];
+final_session: null;
+records.length: 2;

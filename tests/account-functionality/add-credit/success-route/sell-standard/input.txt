@@ -1,0 +1,4 @@
+username: "Seller";
+user_type: SS;
+starting_credit: 100.00;
+credit_add: 10.00;

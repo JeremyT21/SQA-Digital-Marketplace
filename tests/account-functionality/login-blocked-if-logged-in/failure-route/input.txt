@@ -1,0 +1,7 @@
+starting_session: null;
+buy_username: "Buyer";
+user_1_type: BS;
+sell_username: "Buyer";
+user_2_type: SS;
+user_1_initial_credit: 100.00;
+user_2_initial_credit: 100.00;

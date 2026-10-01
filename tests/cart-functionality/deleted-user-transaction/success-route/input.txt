@@ -1,0 +1,13 @@
+username: "Admin";
+user_type: AA;
+user_credit: 100.00;
+user_collection: [];
+seller_username: "Seller";
+seller_exists: true;
+seller_user_type: SS;
+seller_credit: 100.00;
+seller_collection: [];
+game: "GameOne";
+listing_seller: "Seller";
+price: 30.00;
+listing_available_at_session_start: true;

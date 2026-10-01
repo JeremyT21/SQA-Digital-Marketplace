@@ -1,0 +1,6 @@
+create_function: rejected;
+warning: "Invalid account type.";
+new_user_exists: false;
+admin_credit: 100.00;
+final_session: null;
+records.length: 1;

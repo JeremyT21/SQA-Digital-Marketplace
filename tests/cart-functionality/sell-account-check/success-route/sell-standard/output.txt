@@ -1,0 +1,7 @@
+sell_function: approved;
+game: "NewGame";
+seller_username: "Seller";
+price: 30.00;
+seller_credit: 100.00;
+final_session: null;
+records.length: 2;

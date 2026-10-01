@@ -1,0 +1,9 @@
+username: "Buyer";
+user_type: BS;
+user_credit: 100.00;
+buyer_collection: ["GameOne"];
+buyer_username: "Buyer";
+seller_username: "Seller";
+seller_user_type: SS;
+seller_credit: 100.00;
+refund_amount: 30.00;

@@ -1,0 +1,8 @@
+username: "Admin";
+user_type: AA;
+user_credit: 100.00;
+target_username: "Buyer";
+target_exists: true;
+target_user_type: BS;
+target_credit: 100.00;
+credit_add: 10.00;

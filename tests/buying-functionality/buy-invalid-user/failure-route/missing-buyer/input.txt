@@ -1,0 +1,9 @@
+starting_session: null;
+account_username: "MissingUser";
+account_exists: false;
+seller_username: "Seller";
+seller_user_type: SS;
+seller_credit: 100.00;
+game: "GameOne";
+listing_seller: "Seller";
+price: 30.00;

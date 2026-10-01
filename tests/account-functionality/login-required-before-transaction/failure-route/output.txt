@@ -1,0 +1,6 @@
+login: not_initated;
+addcredit: rejected;
+account_username: "Buyer";
+account_type: BS;
+credit_added: 0.00;
+final_credit: 100.00;

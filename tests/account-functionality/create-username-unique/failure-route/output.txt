@@ -1,0 +1,8 @@
+create_function: rejected;
+warning: "Username already exists.";
+buyer_account_count: 1;
+buyer_user_type: BS;
+buyer_credit: 100.00;
+admin_credit: 100.00;
+final_session: null;
+daily_log_records.length: 1;

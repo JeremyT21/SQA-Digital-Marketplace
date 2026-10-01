@@ -1,0 +1,12 @@
+username: "Buyer";
+user_type: BS;
+user_credit: 100.00;
+buyer_collection: [];
+seller_username: "Seller";
+seller_user_type: SS;
+seller_credit: 100.00;
+game: "NewGame";
+listing_seller: "Seller";
+price: 30.00;
+listing_created_in_prior_session: true;
+listing_in_current_starting_fixture: true;

@@ -1,0 +1,7 @@
+username: "Admin";
+user_type: AA;
+user_credit: 100.00;
+new_username: "NewUser";
+username_exists: false;
+new_user_type: BS;
+new_user_initial_credit: "50.00";

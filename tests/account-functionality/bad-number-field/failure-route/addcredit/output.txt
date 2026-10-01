@@ -1,0 +1,5 @@
+addcredit: rejected;
+warning: "Invalid numeric amount.";
+buyer_credit: 100.00;
+final_session: null;
+records.length: 1;

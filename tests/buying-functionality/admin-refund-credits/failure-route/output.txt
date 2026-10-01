@@ -1,0 +1,8 @@
+refund_function: rejected;
+warning: "Invalid numeric amount.";
+buyer_credit: 100.00;
+seller_credit: 100.00;
+admin_credit: 100.00;
+buyer_collection: ["GameOne"];
+final_session: null;
+records.length: 1;

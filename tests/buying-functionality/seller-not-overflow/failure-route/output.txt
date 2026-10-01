@@ -1,0 +1,7 @@
+buy_function: rejected;
+warning: "Seller credit would exceed maximum.";
+buyer_credit: 100.00;
+seller_credit: 999970.00;
+buyer_collection: [];
+final_session: null;
+records.length: 1;

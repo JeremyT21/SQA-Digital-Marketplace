@@ -1,0 +1,6 @@
+username: "Buyer";
+user_type: BS;
+user_credit: 100.00;
+user_collection: [];
+user_listings: [];
+target_username: "Buyer";

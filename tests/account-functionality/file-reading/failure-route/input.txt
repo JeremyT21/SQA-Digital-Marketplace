@@ -1,0 +1,7 @@
+starting_session: null;
+accounts.length: 0;
+available_games: [];
+collections.length: 0;
+account_terminator: "END";
+game_terminator: "END";
+collection_terminator: "END";

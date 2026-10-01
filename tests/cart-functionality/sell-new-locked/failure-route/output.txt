@@ -1,0 +1,11 @@
+sell_function: approved;
+game: "NewGame";
+seller_username: "Admin";
+price: 30.00;
+current_session_available_games: [];
+buy_function: rejected;
+warning: "Listing unavailable in current session.";
+admin_credit: 100.00;
+user_collection: [];
+final_session: null;
+records.length: 2;

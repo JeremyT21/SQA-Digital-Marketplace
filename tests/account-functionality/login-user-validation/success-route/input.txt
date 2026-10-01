@@ -1,0 +1,5 @@
+starting_session: null;
+account_username: "Buyer";
+account_exists: true;
+account_type: BS;
+starting_credit: 100.00;

@@ -1,0 +1,10 @@
+sell_function: rejected;
+warning: "Game name already exists.";
+existing_game: "GameOne";
+existing_seller_username: "Seller";
+existing_price: 30.00;
+additional_listings: [];
+existing_listing_count: 1;
+seller_credit: 100.00;
+final_session: null;
+records.length: 1;

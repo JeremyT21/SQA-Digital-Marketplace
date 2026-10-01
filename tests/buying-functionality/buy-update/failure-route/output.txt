@@ -1,0 +1,7 @@
+buy_function: rejected;
+warning: "Insufficient credit.";
+buyer_credit: 20.00;
+seller_credit: 100.00;
+buyer_collection: [];
+final_session: null;
+records.length: 1;

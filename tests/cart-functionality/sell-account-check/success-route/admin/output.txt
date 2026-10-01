@@ -1,0 +1,7 @@
+sell_function: approved;
+game: "NewGame";
+seller_username: "Admin";
+price: 30.00;
+admin_credit: 100.00;
+final_session: null;
+records.length: 2;

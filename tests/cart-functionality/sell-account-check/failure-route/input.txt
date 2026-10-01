@@ -1,0 +1,7 @@
+username: "Buyer";
+user_type: BS;
+user_credit: 100.00;
+existing_listings: [];
+game: "NewGame";
+game_exists: false;
+price: 30.00;

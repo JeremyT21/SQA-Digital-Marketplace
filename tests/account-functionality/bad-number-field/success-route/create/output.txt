@@ -1,0 +1,7 @@
+create_function: approved;
+new_user_exists: true;
+new_user_type: BS;
+new_user_credit: 50.00;
+admin_credit: 100.00;
+final_session: null;
+records.length: 2;

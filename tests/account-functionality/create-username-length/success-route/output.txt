@@ -1,0 +1,5 @@
+create_function: approved;
+created_username: "TESTTESTTESTTES";
+created_user_type: BS;
+new_user_initial_credit: 0.00;
+records.length: 2;

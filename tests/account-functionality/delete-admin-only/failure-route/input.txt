@@ -1,0 +1,9 @@
+username: "Buyer";
+user_type: BS;
+user_credit: 100.00;
+target_username: "Target";
+target_exists: true;
+target_user_type: BS;
+target_credit: 0.00;
+target_collection: [];
+target_listings: [];

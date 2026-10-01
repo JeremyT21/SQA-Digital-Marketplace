@@ -1,0 +1,5 @@
+create_function: accepted;
+NewUser_exists: true;
+NewUser_type: BS;
+NewUser_credit: 0.00;
+final_session: null;

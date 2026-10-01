@@ -1,0 +1,8 @@
+username: "Admin";
+user_type: AA;
+user_credit: 100.00;
+user_collection: [];
+available_games_at_login: [];
+game: "NewGame";
+price: 30.00;
+seller_username: "Admin";

@@ -1,0 +1,5 @@
+addcredit: approved;
+buyer_credit: 999999.99;
+credit_text_length: 9;
+final_session: null;
+records.length: 2;

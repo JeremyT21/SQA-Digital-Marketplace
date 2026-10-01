@@ -1,0 +1,7 @@
+new_game_displayed: true;
+buy_function: approved;
+buyer_credit: 70.00;
+seller_credit: 130.00;
+buyer_collection: ["NewGame"];
+final_session: null;
+records.length: 2;

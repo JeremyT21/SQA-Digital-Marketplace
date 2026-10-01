@@ -1,0 +1,7 @@
+delete_function: rejected;
+warning: "User does not exist.";
+missing_user_exists: false;
+admin_exists: true;
+admin_credit: 100.00;
+final_session: null;
+records.length: 1;

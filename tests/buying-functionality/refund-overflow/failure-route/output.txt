@@ -1,0 +1,8 @@
+refund_function: rejected;
+warning: "Buyer credit would exceed maximum.";
+buyer_credit: 999999.99;
+seller_credit: 100.00;
+admin_credit: 100.00;
+buyer_collection: ["GameOne"];
+final_session: null;
+records.length: 1;

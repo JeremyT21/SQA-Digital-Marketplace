@@ -1,0 +1,8 @@
+login: rejected;
+buy_function: rejected;
+warning: "User does not exist, login required.";
+seller_credit: 100.00;
+missing_user_exists: false;
+ownership_changes: [];
+final_session: null;
+records.length: 0;

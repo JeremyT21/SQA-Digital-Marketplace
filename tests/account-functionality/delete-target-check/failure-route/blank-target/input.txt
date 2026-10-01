@@ -1,0 +1,9 @@
+username: "Admin";
+user_type: AA;
+user_credit: 100.00;
+existing_username: "Target";
+existing_user_type: BS;
+existing_user_credit: 0.00;
+existing_user_collection: [];
+existing_listings: [];
+target_username: "";

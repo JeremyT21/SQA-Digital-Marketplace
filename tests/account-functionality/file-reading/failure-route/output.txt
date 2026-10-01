@@ -1,0 +1,8 @@
+load: approved;
+accounts.length: 0;
+available_games: [];
+collections.length: 0;
+displayed_owners: [];
+END_displayed_as_entry: false;
+fabricated_entries: [];
+records.length: 0;

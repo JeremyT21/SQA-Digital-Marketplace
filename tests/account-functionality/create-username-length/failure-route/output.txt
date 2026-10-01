@@ -1,0 +1,4 @@
+create_function: rejected;
+warning: "Username exceeded 15 characters, invalid.";
+created_username: null;
+records.length: 1;

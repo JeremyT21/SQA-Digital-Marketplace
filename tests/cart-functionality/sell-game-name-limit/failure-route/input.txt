@@ -1,0 +1,8 @@
+username: "Seller";
+user_type: SS;
+user_credit: 100.00;
+existing_listings: [];
+game: "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+game_name_length: 26;
+game_exists: false;
+price: 30.00;

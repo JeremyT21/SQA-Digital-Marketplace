@@ -1,0 +1,8 @@
+first_addition: approved;
+second_addition: approved;
+third_addition: rejected;
+warning: "Session credit limit exceeded.";
+session_credit_added: 1000.00;
+buyer_credit: 1100.00;
+final_session: null;
+records.length: 3;

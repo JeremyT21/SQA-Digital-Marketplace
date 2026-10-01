@@ -1,0 +1,6 @@
+buy_function: approved;
+buyer_credit: 100.00;
+seller_credit: 100.00;
+buyer_collection: ["GameOne"];
+final_session: null;
+records.length: 2;

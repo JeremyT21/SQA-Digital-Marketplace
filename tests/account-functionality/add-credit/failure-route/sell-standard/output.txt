@@ -1,0 +1,6 @@
+addcredit: rejected;
+warning: "Invalid numeric amount.";
+target_username_prompt: false;
+seller_credit: 100.00;
+final_session: null;
+records.length: 1;

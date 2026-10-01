@@ -1,0 +1,5 @@
+username: "Buyer";
+user_type: BS;
+starting_credit: 100.00;
+command: "addcredit";
+credit_add: 10.00;

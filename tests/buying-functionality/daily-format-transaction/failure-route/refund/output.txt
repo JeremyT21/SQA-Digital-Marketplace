@@ -1,0 +1,8 @@
+refund_function: rejected;
+warning: "Buyer does not exist.";
+missing_user_exists: false;
+seller_credit: 100.00;
+admin_credit: 100.00;
+ownership_changes: [];
+final_session: null;
+records.length: 1;

@@ -1,0 +1,5 @@
+delete_function: approved;
+target_exists: false;
+admin_credit: 100.00;
+final_session: null;
+records.length: 2;

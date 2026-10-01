@@ -1,0 +1,5 @@
+delete_function: approved;
+admin_exists: false;
+session_ended_automatically: true;
+final_session: null;
+records.length: 2;

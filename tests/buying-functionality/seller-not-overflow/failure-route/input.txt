@@ -1,0 +1,11 @@
+username: "Buyer";
+user_type: BS;
+user_credit: 100.00;
+buyer_collection: [];
+seller_username: "Seller";
+seller_user_type: SS;
+seller_credit: 999970.00;
+game: "GameOne";
+listing_seller: "Seller";
+price: 30.00;
+listing_available_at_session_start: true;

@@ -1,0 +1,10 @@
+delete_function: rejected;
+warning: "Admin privileges required.";
+buyer_exists: true;
+buyer_user_type: BS;
+buyer_credit: 100.00;
+buyer_collection: [];
+buyer_listings: [];
+active_user_after_rejection: "Buyer";
+final_session: null;
+records.length: 1;

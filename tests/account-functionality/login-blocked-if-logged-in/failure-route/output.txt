@@ -1,0 +1,8 @@
+first_login: approved;
+first_logout: null;
+second_login: rejected;
+warning: "Already logged in.";
+user_1_credit: 100.00;
+user_2_credit: 100.00;
+final_session: null;
+record_return.length: 1;

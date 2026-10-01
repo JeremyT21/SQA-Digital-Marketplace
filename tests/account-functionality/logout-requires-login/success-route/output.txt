@@ -1,0 +1,5 @@
+login: approved;
+logout: approved;
+final_credit: 100.00;
+final_session: null;
+final_record: true;

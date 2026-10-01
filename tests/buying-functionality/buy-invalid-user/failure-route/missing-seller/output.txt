@@ -1,0 +1,8 @@
+buy_function: rejected;
+warning: "Invalid seller.";
+buyer_credit: 100.00;
+seller_credit: 100.00;
+buyer_collection: [];
+missing_user_exists: false;
+final_session: null;
+records.length: 1;

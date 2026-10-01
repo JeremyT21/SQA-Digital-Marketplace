@@ -1,0 +1,4 @@
+create_function: rejected;
+warning: "Need admin privileges.";
+NewUser_exists: false;
+final_session: null;
