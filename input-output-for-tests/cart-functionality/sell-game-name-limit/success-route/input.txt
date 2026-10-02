@@ -2,7 +2,7 @@ username: "Seller";
 user_type: SS;
 user_credit: 100.00;
 existing_listings: [];
-game: "ABCDEFGHIJKLMNOPQRSTUVWXY";
+game: "GameOneUltraVeryCool12345";
 game_name_length: 25;
 game_exists: false;
 price: 30.00;
