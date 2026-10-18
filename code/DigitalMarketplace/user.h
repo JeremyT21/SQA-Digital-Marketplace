@@ -5,6 +5,15 @@
 #include <vector>
 using namespace std;
 
+// game listing
+class GameListing {
+public:
+    int priceInMoney;
+    string sellerName;
+    string gameTitle;
+};
+
+
 //user account
 class UserAccount {
 public:
@@ -22,6 +31,7 @@ public:
 class UserSession {
 private:
     UserAccount loggedInAccount;
+    bool loggedIn = false;
     map<string, int> creditAddedByUser;
     set<string> listingsAvailableAtLogin;
 
@@ -33,6 +43,7 @@ public:
     bool wasAvailableWhenLoggedIn(string title, string seller);
     void creditAddedTotal(string username, int creditAmount);
     string formatTransactionRecord();
+    UserAccount currentAccount();
 };
 
 
@@ -47,10 +58,10 @@ public:
 //transaction log
 class TransactionLog {
 public:
-    int amountDollars;
+    int amountDollars = 0;
     string sellerName;
     string buyerName;
     GameListing listing;
     UserAccount buyerAccount;
-    int code;
+    int code = 0;
 };

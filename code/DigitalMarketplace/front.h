@@ -1,28 +1,9 @@
 #pragma once
+#include <iostream>
 #include <string>
 #include <vector>
 #include "market.h"
 using namespace std;
-
-//front end
-class FrontEnd {
-private:
-    Marketplace marketplace;
-    istream input;
-    ostream output;
-    FrontEndFileManager files;
-
-public:
-    void executeFrontEnd();
-
-private:
-    void showStats(action);
-    void infoMarketplace();
-    int getUserMoney(text);
-    string readValueInField(prompt);
-    void getFromMarketplace(command);
-};
-
 
 // front end manager
 class FrontEndFileManager {
@@ -34,4 +15,25 @@ public:
 
 private:
     string formatTransaction(TransactionLog record);
+};
+
+
+//front end
+class FrontEnd {
+private:
+    Marketplace marketplace;
+    istream &input;
+    ostream &output;
+    FrontEndFileManager files;
+
+public:
+    FrontEnd(istream& in, ostream& out) : input(in), output(out) {}
+    void executeFrontEnd();
+
+private:
+    void showStats(ResultingChange result);
+    void infoMarketplace();
+    int getUserMoney(string text);
+    string readValueInField(string prompt);
+    void getFromMarketplace(string command);
 };

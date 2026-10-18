@@ -4,6 +4,14 @@
 #include "user.h"
 using namespace std;
 
+// resulting change
+class ResultingChange {
+public:
+    bool success;
+    string message;
+    bool sessionEnded;
+};
+
 // marketplace
 class Marketplace {
 private:
@@ -33,22 +41,4 @@ public:
     vector<GameListing> currentAvailableGames();
     vector<TransactionLog> transactions();
     void resetTransactions();
-};
-
-
-// resulting change
-class ResultingChange {
-public:
-    bool success;
-    string message;
-    bool sessionEnded;
-};
-
-
-// game listing
-class GameListing {
-public:
-    int priceInMoney;
-    string sellerName;
-    string gameTitle;
 };
