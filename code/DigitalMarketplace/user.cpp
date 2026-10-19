@@ -1,18 +1,18 @@
 #include "user.h"
 #include <sstream>
 
-// CLASS EXPLANATIONS IN ASSOCIATED HEADER FILES
+// EXPLANATIONS IN ASSOCIATED HEADER FILES
 
 bool UserAccount::canUserBuy() {
-    return type == "AA";
-}
-
-bool UserAccount::canUserSell() {
     return type == "AA" || type == "FS" || type == "BS";
 }
 
-bool UserAccount::isAdmin() {
+bool UserAccount::canUserSell() {
     return type == "AA" || type == "FS" || type == "SS";
+}
+
+bool UserAccount::isAdmin() {
+    return type == "AA";
 }
 
 void UserSession::start(UserAccount account, vector<GameListing> listings) {

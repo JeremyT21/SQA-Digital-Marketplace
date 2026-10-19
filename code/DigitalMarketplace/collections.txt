@@ -1,4 +1,5 @@
 "admin" "Halo 3"
 "owen" "Bloons TD 6"
-"Jeremy" "Mario Party"
+"jeremy" "Mario Party"
 "vendor" "Tetris"
+END

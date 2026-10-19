@@ -1,7 +1,7 @@
 #include "market.h"
 #include <algorithm>
 
-// CLASS EXPLANATIONS IN ASSOCIATED HEADER FILES
+// EXPLANATIONS IN ASSOCIATED HEADER FILES
 
 GameListing Marketplace::findListing(string title, string seller) {
     for (const auto& listing : listings) {
@@ -25,6 +25,10 @@ void Marketplace::loadData(vector<UserAccount> a, vector<GameListing> l,
 }
 
 ResultingChange Marketplace::logout() {
+    TransactionLog record;
+    record.code = 00;
+    record.buyerAccount = session.currentAccount();
+    pendingRecords.push_back(record);
     session.end();
     return { true, "Logged out.", true };
 }
@@ -43,9 +47,9 @@ ResultingChange Marketplace::createAccount(string username, string type, int cre
     accounts.push_back(account);
 
     TransactionLog record;
-    record.code = 1;
+    record.code = 01;
     record.buyerName = username;
-    record.amountDollars = credit;
+    record.amountCents = credit;
     pendingRecords.push_back(record);
     return { true, "Account " + username + " created.", false };
 }
@@ -60,7 +64,7 @@ ResultingChange Marketplace::deleteAccount(string username) {
     if (deletingSelf) session.end();
 
     TransactionLog record;
-    record.code = 2;
+    record.code = 02;
     record.buyerName = username;
     pendingRecords.push_back(record);
     return { true, "Account " + username + " deleted.", deletingSelf };
@@ -73,15 +77,18 @@ ResultingChange Marketplace::addToCredit(string username, int amount) {
     session.creditAddedTotal(username, amount);
 
     TransactionLog record;
-    record.code = 6;
+    record.code = 06;
     record.buyerName = username;
-    record.amountDollars = amount;
+    record.amountCents = amount;
     pendingRecords.push_back(record);
     return { true, "Credit added to " + username + ".", false };
 }
 
 ResultingChange Marketplace::userBuyGame(string title, string seller) {
     UserAccount buyer = session.currentAccount();
+    if(buyer.username == "") {
+        return { false, "No user is currently logged in.", false };
+    }
     GameListing listing = findListing(title, seller);
 
     auto buyerIt = find_if(accounts.begin(), accounts.end(),
@@ -98,8 +105,8 @@ ResultingChange Marketplace::userBuyGame(string title, string seller) {
     collections.push_back(owned);
 
     TransactionLog record;
-    record.code = 4;
-    record.amountDollars = listing.priceInMoney;
+    record.code = 04;
+    record.amountCents = listing.priceInMoney;
     record.buyerName = buyer.username;
     record.sellerName = seller;
     record.listing = listing;
@@ -110,6 +117,9 @@ ResultingChange Marketplace::userBuyGame(string title, string seller) {
 
 ResultingChange Marketplace::sellGame(string title, int price) {
     UserAccount account = session.currentAccount();
+    if (account.username == "") {
+        return { false, "No user is currently logged in.", false };
+    }
     GameListing listing;
     listing.gameTitle = title;
     listing.sellerName = account.username;
@@ -117,10 +127,10 @@ ResultingChange Marketplace::sellGame(string title, int price) {
     listings.push_back(listing);
 
     TransactionLog record;
-    record.code = 3;
+    record.code = 03;
     record.sellerName = account.username;
     record.listing = listing;
-    record.amountDollars = price;
+    record.amountCents = price;
     pendingRecords.push_back(record);
     return { true, "Listed " + title + " for sale.", false };
 }
@@ -135,10 +145,10 @@ ResultingChange Marketplace::refund(string buyer, string seller, int amount) {
     buyerIt->credit += amount;
 
     TransactionLog record;
-    record.code = 5;
+    record.code = 05;
     record.buyerName = buyer;
     record.sellerName = seller;
-    record.amountDollars = amount;
+    record.amountCents = amount;
     pendingRecords.push_back(record);
     return { true, "Refund issued to " + buyer + ".", false };
 }
