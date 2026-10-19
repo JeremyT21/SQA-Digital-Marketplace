@@ -1,6 +1,8 @@
 #include "market.h"
 #include <algorithm>
 
+// CLASS EXPLANATIONS IN ASSOCIATED HEADER FILES
+
 GameListing Marketplace::findListing(string title, string seller) {
     for (const auto& listing : listings) {
         if (listing.gameTitle == title && listing.sellerName == seller) return listing;

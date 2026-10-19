@@ -5,7 +5,8 @@
 #include "market.h"
 using namespace std;
 
-// front end manager
+
+// frontEndFileManager handles reading and writing for the txt files that store data for the marketplace, getting and writing new values to the files when info is needed or changed
 class FrontEndFileManager {
 public:
     vector<GameListing> readListings();
@@ -18,7 +19,7 @@ private:
 };
 
 
-//front end
+// frontend handles user interface and is run by the main function, taking commands from the user and running the appropriate function.
 class FrontEnd {
 private:
     Marketplace marketplace;

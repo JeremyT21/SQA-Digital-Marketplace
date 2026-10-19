@@ -1,6 +1,8 @@
 #include "user.h"
 #include <sstream>
 
+// CLASS EXPLANATIONS IN ASSOCIATED HEADER FILES
+
 bool UserAccount::canUserBuy() {
     return type == "AA";
 }

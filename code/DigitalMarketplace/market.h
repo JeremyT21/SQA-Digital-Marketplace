@@ -4,7 +4,8 @@
 #include "user.h"
 using namespace std;
 
-// resulting change
+
+// ResultingChange class is used to track the results of functions used, whether or not they succeed, have ended, and a message to display to the user if needed.
 class ResultingChange {
 public:
     bool success;
@@ -12,7 +13,8 @@ public:
     bool sessionEnded;
 };
 
-// marketplace
+/* Marketplace is the primary class for controlling the users interaction with the market, handling the current session, as well as the information stored in the 4 txt files
+(containing accounts, listings, collections, and transactions). */
 class Marketplace {
 private:
     UserSession session;

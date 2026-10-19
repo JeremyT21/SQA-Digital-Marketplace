@@ -4,6 +4,8 @@
 #include <sstream>
 #include <iomanip>
 
+// CLASS EXPLANATIONS IN ASSOCIATED HEADER FILES
+
 vector<GameListing> FrontEndFileManager::readListings() {
     vector<GameListing> result;
     ifstream file("listings.txt");
