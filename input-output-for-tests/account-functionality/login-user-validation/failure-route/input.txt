@@ -1,3 +1,0 @@
-starting_session: null;
-account_username: "MissingUser";
-account_exists: false;

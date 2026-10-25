@@ -1,0 +1,6 @@
+login
+buyer
+login
+seller
+logout
+exit

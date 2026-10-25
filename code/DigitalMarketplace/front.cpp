@@ -8,18 +8,22 @@
 
 vector<UserAccount> FrontEndFileManager::readAccounts() {
     vector<UserAccount> result;
-    ifstream file("accounts.txt");
-    if (!file.is_open()) return result;          // missing file -> empty
-
-    string username, type;
-    int credit;
-    while (file >> quoted(username)) {
-        if (username == "END") break;
-        if (!(file >> quoted(type) >> credit)) break;   // malformed -> stop
+    ifstream file(accountpath);
+    string accountline;
+    while (getline(file, accountline)) {
+        if (accountline.substr(0, 15) == "END            ") {
+            break;
+        }
+        if (accountline.length() != 28) {
+            continue;
+        }
         UserAccount account;
-        account.username = username;
-        account.type = type;
-        account.credit = credit;
+        account.username = accountline.substr(0, 15);
+        while (!account.username.empty() && account.username.back() == ' ') {
+            account.username.pop_back();
+        }
+        account.type = accountline.substr(16, 2);
+        account.credit = static_cast<int>(stod(accountline.substr(19, 9)) * 100 + 0.5);
         result.push_back(account);
     }
     return result;
@@ -27,7 +31,7 @@ vector<UserAccount> FrontEndFileManager::readAccounts() {
 
 vector<GameListing> FrontEndFileManager::readListings() {
     vector<GameListing> result;
-    ifstream file("listings.txt");
+    ifstream file(listingpath);
     if (!file.is_open()) return result;
 
     string seller, title;
@@ -46,7 +50,7 @@ vector<GameListing> FrontEndFileManager::readListings() {
 
 vector<UserOwnsGame> FrontEndFileManager::readCollections() {
     vector<UserOwnsGame> result;
-    ifstream file("collections.txt");
+    ifstream file(collectionpath);
     if (!file.is_open()) return result;
 
     string owner, title;
@@ -62,21 +66,28 @@ vector<UserOwnsGame> FrontEndFileManager::readCollections() {
 }
 
 bool FrontEndFileManager::logTransactionsFromUser(vector<TransactionLog> records) {
-    ofstream file("transactions.txt", ios::app);
+    ofstream file(transactionpath, ios::app);
     for (const auto& record : records) file << formatTransaction(record) << '\n';
-    return true;
+    file.close();
+    return !file.fail();
 }
 
 string FrontEndFileManager::formatTransaction(TransactionLog record) {
     ostringstream out;
+    if (record.code == 0) {
+        out << "00 " << left << setw(15) << record.buyerAccount.username << ' '
+            << record.buyerAccount.type << ' ' << right << setfill('0') << setw(9)
+            << fixed << setprecision(2) << record.buyerAccount.credit / 100.0;
+        return out.str();
+    }
     out << "0" << record.code << ' ' << record.buyerName << ' ' << record.sellerName
-        << ' $' << fixed << setprecision(2) << record.amountCents/100.0 << ' ' << record.listing.gameTitle;
+        << " $" << fixed << setprecision(2) << record.amountCents/100.0 << ' ' << record.listing.gameTitle;
     return out.str();
 }
 
 void FrontEnd::executeFrontEnd() {
     marketplace.loadData(files.readAccounts(), files.readListings(), files.readCollections());
-    output << "Marketplace. Type help for commands.\n";
+    output << "marketplace type help for commands\n";
 
     string command;
     while (true) {
@@ -93,7 +104,7 @@ void FrontEnd::executeFrontEnd() {
                     marketplace.resetTransactions();   // clear only after a confirmed write
                 }
                 else {
-                    output << "Error: could not write transactions.txt; records kept.\n";
+                    output << "could not write transaction output records kept\n";
                 }
             }
         }
@@ -129,7 +140,7 @@ void FrontEnd::getFromMarketplace(string command) {
             << "Money amounts are entered as cents, e.g. 1250 = $12.50.\n";
     }
     else if (command == "login") {
-        showStats(marketplace.login(readValueInField("Username: ")));
+        showStats(marketplace.login(readValueInField("username: ")));
     }
     else if (command == "logout") {
         showStats(marketplace.logout());

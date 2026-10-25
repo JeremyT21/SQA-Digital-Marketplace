@@ -1,0 +1,9 @@
+marketplace type help for commands
+
+> username: logged in as buyer
+
+> username: already logged in
+
+> logged out
+
+> 

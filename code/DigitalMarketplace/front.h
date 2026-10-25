@@ -12,6 +12,10 @@ front handles the user interface and is run by the main function, taking command
 // frontEndFileManager handles reading and writing for the txt files that store data for the marketplace, getting and writing new values to the files when info is needed or changed
 class FrontEndFileManager {
 public:
+    string accountpath;
+    string listingpath;
+    string collectionpath;
+    string transactionpath;
 	// reads the game listings from the listings.txt file, returning a vector of GameListing objects
     vector<GameListing> readListings();
 	// reads the user collections from the collections.txt file, returning a vector of UserOwnsGame objects
@@ -36,7 +40,13 @@ private:
     FrontEndFileManager files;
 
 public:
-    FrontEnd(istream& in, ostream& out) : input(in), output(out) {}
+    FrontEnd(istream& in, ostream& out, string accountpath, string listingpath,
+        string collectionpath, string transactionpath) : input(in), output(out) {
+        files.accountpath = accountpath;
+        files.listingpath = listingpath;
+        files.collectionpath = collectionpath;
+        files.transactionpath = transactionpath;
+    }
 	// executes the front end of the marketplace program, taking commands from the user and running the appropriate function
     void executeFrontEnd();
 

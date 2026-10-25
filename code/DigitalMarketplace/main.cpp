@@ -1,23 +1,32 @@
-/*
-PROGRAM INTENT: the objective of this program is to simulate a marketplace where users can buy and sell items. 
-The program provides a front-end interface for users to interact with the marketplace, allowing them to view available items, make purchases, and manage their accounts. 
-The main function initializes the front-end and starts the execution of the marketplace program.
-
-All classes are described in their respective header files
-
-the program should be run via the project solution, where then the 4 cpp files and 3 header files are compiled and the user terminal is used to interact with the program. 
-commands found by entering the help command.
-*/
-
+#include <fstream>
 #include <iostream>
 #include "front.h"
-#include "market.h"
-#include "user.h"
 
 using namespace std;
-//runs the front end of the marketplace program
-int main() {
-    FrontEnd frontEnd(cin, cout);
-    frontEnd.executeFrontEnd();
+
+int main(int argumentcount, char* arguments[]) {
+    if (argumentcount != 5) {
+        cerr << "usage: marketplace accounts games collections transactions\n";
+        return 1;
+    }
+    for (int fileindex = 1; fileindex <= 3; fileindex++) {
+        ifstream inputfile(arguments[fileindex]);
+        if (!inputfile.is_open()) {
+            cerr << "could not open input file: " << arguments[fileindex] << "\n";
+            return 1;
+        }
+        if (string(arguments[fileindex]) == arguments[4]) {
+            cerr << "transaction output must have a separate path\n";
+            return 1;
+        }
+    }
+    ofstream transactionfile(arguments[4]);
+    if (!transactionfile.is_open()) {
+        cerr << "could not open transaction output\n";
+        return 1;
+    }
+    transactionfile.close();
+    FrontEnd frontend(cin, cout, arguments[1], arguments[2], arguments[3], arguments[4]);
+    frontend.executeFrontEnd();
     return 0;
 }

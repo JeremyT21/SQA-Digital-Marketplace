@@ -25,18 +25,27 @@ void Marketplace::loadData(vector<UserAccount> a, vector<GameListing> l,
 }
 
 ResultingChange Marketplace::logout() {
+    if (!session.isUserLoggedIn()) {
+        return { false, "no user is currently logged in", false };
+    }
     TransactionLog record;
     record.code = 00;
     record.buyerAccount = session.currentAccount();
     pendingRecords.push_back(record);
     session.end();
-    return { true, "Logged out.", true };
+    return { true, "logged out", true };
 }
 
 ResultingChange Marketplace::login(string username) {
+    if (session.isUserLoggedIn()) {
+        return { false, "already logged in", false };
+    }
     UserAccount account = findAccount(username);
+    if (account.username.empty()) {
+        return { false, "user does not exist", false };
+    }
     session.start(account, listings);
-    return { true, "Logged in as " + username + ".", false };
+    return { true, "logged in as " + username, false };
 }
 
 ResultingChange Marketplace::createAccount(string username, string type, int credit) {

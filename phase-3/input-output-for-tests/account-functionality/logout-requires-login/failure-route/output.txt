@@ -1,0 +1,5 @@
+marketplace type help for commands
+
+> no user is currently logged in
+
+> 
