@@ -1,0 +1,8 @@
+login
+Admin
+create
+TESTTESTTESTTEST
+BS
+0.00
+logout
+exit

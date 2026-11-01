@@ -1,0 +1,11 @@
+marketplace type help for commands
+
+> username: logged in as Admin
+
+> Username to delete: Account Seller deleted.
+
+> Game title: Seller username: Seller deleted or unavailable.
+
+> logged out
+
+> 

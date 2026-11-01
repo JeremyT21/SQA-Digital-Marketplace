@@ -1,0 +1,7 @@
+login
+Seller
+sell
+NewGame
+abc
+logout
+exit

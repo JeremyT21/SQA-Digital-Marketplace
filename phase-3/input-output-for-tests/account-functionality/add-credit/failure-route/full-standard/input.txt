@@ -1,0 +1,6 @@
+login
+FullUser
+addcredit
+abc
+logout
+exit

@@ -1,0 +1,13 @@
+login
+Admin
+create
+NewUser
+BS
+50.00
+delete
+Target
+addcredit
+Buyer
+10.00
+logout
+exit

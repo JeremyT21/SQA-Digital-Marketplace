@@ -1,0 +1,7 @@
+login
+Seller
+sell
+NewGame
+999.99
+logout
+exit

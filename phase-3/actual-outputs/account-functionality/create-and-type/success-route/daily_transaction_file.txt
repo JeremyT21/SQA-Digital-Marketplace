@@ -1,0 +1,5 @@
+01 NewAdmin        AA 000050.00
+01 NewFull         FS 000050.00
+01 NewBuyer        BS 000050.00
+01 NewSeller       SS 000050.00
+00                    000000000

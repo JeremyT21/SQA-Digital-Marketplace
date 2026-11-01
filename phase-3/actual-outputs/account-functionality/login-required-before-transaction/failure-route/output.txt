@@ -1,0 +1,5 @@
+marketplace type help for commands
+
+> Amount in dollars: no user is currently logged in
+
+> 

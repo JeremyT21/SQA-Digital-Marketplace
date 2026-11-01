@@ -1,0 +1,15 @@
+marketplace type help for commands
+
+> username: logged in as Admin
+
+> New username: Type (AA/FS/BS/SS): Starting credit in dollars: Account NewAdmin created.
+
+> New username: Type (AA/FS/BS/SS): Starting credit in dollars: Account NewFull created.
+
+> New username: Type (AA/FS/BS/SS): Starting credit in dollars: Account NewBuyer created.
+
+> New username: Type (AA/FS/BS/SS): Starting credit in dollars: Account NewSeller created.
+
+> logged out
+
+> 

@@ -1,0 +1,6 @@
+login
+Seller
+addcredit
+10.00
+logout
+exit

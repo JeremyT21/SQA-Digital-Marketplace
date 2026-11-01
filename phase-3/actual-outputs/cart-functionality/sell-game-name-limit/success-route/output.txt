@@ -1,0 +1,9 @@
+marketplace type help for commands
+
+> username: logged in as Seller
+
+> Game title: Price in dollars: Listed GameOneUltraVeryCool12345 for sale.
+
+> logged out
+
+> 

@@ -1,0 +1,8 @@
+login
+Buyer
+list
+buy
+NewGame
+Seller
+logout
+exit

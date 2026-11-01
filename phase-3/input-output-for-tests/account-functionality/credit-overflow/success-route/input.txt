@@ -1,0 +1,6 @@
+login
+Buyer
+addcredit
+0.01
+logout
+exit

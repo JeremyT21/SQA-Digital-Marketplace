@@ -1,0 +1,13 @@
+marketplace type help for commands
+
+> username: logged in as Admin
+
+> Game title: Price in dollars: Listed NewGame for sale.
+
+> No games available.
+
+> Game title: Seller username: Listing unavailable in current session.
+
+> logged out
+
+> 

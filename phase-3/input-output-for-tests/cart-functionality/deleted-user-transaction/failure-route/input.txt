@@ -1,0 +1,9 @@
+login
+Admin
+delete
+Seller
+buy
+GameOne
+Seller
+logout
+exit

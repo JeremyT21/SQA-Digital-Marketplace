@@ -1,0 +1,6 @@
+login
+Seller
+addcredit
+abc
+logout
+exit

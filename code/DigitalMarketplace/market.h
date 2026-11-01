@@ -24,12 +24,17 @@ private:
     vector<GameListing> listings;
     vector<UserOwnsGame> collections;
     vector<TransactionLog> pendingRecords;
+    set<string> deletedUsers;
 	//finds a specific listing based on title and seller, returning the GameListing object if found, or an empty GameListing object if not found
     GameListing findListing(string title, string seller);
 	//finds a specific account based on username, returning the UserAccount object if found, or an empty UserAccount object if not found
     UserAccount findAccount(string accountUsername);
 
 public:
+    bool isLoggedIn();
+    bool isCurrentAdmin();
+    string currentUsername();
+    vector<UserOwnsGame> currentCollections();
 	// loads the data from the 3 txt files (listing, accounts, collections) into the marketplace, storing the data in their respective vectors
     void loadData(vector<UserAccount> accounts,
         vector<GameListing> listings,

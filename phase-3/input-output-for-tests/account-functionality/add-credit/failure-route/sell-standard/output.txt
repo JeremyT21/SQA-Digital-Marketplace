@@ -1,0 +1,9 @@
+marketplace type help for commands
+
+> username: logged in as Seller
+
+> Amount in dollars: Invalid numeric amount.
+
+> logged out
+
+> 

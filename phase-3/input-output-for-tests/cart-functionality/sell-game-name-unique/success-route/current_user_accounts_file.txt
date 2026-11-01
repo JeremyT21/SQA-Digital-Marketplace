@@ -1,0 +1,2 @@
+Seller          SS 000100.00
+END                         

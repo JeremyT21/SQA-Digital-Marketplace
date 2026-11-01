@@ -1,0 +1,6 @@
+marketplace type help for commands
+
+> GameOne | seller: Seller | $30.00
+Buyer owns GameOne.
+
+> 

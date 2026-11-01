@@ -1,0 +1,6 @@
+login
+Buyer
+delete
+Target
+logout
+exit

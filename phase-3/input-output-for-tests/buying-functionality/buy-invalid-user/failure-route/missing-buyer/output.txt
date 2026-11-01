@@ -1,0 +1,7 @@
+marketplace type help for commands
+
+> username: user does not exist
+
+> Game title: Seller username: User does not exist, login required.
+
+> 

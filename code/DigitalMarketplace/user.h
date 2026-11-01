@@ -11,7 +11,7 @@ user handles the user-related functionality within the marketplace.*/
 // GameListing class stores values of an associated game including price seller and title.
 class GameListing {
 public:
-    int priceInMoney;
+    int priceInMoney = 0;
     string sellerName;
     string gameTitle;
 };
@@ -20,7 +20,7 @@ public:
 //UserAccount stores values of an associated user including credit, type, and username. It also has functions to check for user permissions.
 class UserAccount {
 public:
-    int credit;
+    int credit = 0;
     string type;
     string username;
 	//returns true if the user has permission to buy, false otherwise

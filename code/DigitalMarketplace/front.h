@@ -40,8 +40,10 @@ private:
     FrontEndFileManager files;
 
 public:
+    //store file paths for reading and writing
     FrontEnd(istream& in, ostream& out, string accountpath, string listingpath,
-        string collectionpath, string transactionpath) : input(in), output(out) {
+        string collectionpath, string transactionpath) : input(in), output(out)
+    {
         files.accountpath = accountpath;
         files.listingpath = listingpath;
         files.collectionpath = collectionpath;

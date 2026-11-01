@@ -1,0 +1,3 @@
+Buyer           BS 000020.00
+Seller          SS 000100.00
+END                         

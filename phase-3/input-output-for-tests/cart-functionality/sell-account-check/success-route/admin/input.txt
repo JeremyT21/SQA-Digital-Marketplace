@@ -1,0 +1,7 @@
+login
+Admin
+sell
+NewGame
+30.00
+logout
+exit

@@ -1,0 +1,6 @@
+login
+FullUser
+addcredit
+10.00
+logout
+exit

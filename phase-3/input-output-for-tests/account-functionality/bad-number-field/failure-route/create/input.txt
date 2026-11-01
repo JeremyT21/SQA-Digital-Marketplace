@@ -1,0 +1,8 @@
+login
+Admin
+create
+NewUser
+BS
+abc
+logout
+exit

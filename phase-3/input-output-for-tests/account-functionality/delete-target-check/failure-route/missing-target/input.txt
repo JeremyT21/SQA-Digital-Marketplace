@@ -1,0 +1,6 @@
+login
+Admin
+delete
+MissingUser
+logout
+exit

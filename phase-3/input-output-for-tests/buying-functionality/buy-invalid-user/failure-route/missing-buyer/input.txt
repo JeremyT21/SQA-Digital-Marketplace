@@ -1,0 +1,6 @@
+login
+MissingUser
+buy
+GameOne
+Seller
+exit
