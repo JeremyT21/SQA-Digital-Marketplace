@@ -1,4 +1,0 @@
-username: "FullUser";
-user_type: FS;
-starting_credit: 100.00;
-credit_add: "abc";

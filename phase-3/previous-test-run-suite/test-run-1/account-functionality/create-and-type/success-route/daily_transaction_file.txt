@@ -1,0 +1,5 @@
+01 NewAdmin  $50.00 
+01 NewFull  $50.00 
+01 NewBuyer  $50.00 
+01 NewSeller  $50.00 
+00 Admin           AA 000100.00

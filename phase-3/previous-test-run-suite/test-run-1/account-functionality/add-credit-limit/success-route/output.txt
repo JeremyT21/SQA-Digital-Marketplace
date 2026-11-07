@@ -1,0 +1,15 @@
+marketplace type help for commands
+
+> username: logged in as Buyer
+
+> Unknown command. Type help.
+
+> Unknown command. Type help.
+
+> Unknown command. Type help.
+
+> Unknown command. Type help.
+
+> logged out
+
+> 

@@ -1,0 +1,9 @@
+marketplace type help for commands
+
+> username: logged in as Buyer
+
+> Game title: Seller username: Bought GameOne from MissingUser.
+
+> logged out
+
+> 

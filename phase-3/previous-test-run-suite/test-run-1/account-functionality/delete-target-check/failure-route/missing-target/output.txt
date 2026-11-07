@@ -1,0 +1,5 @@
+marketplace type help for commands
+
+> username: logged in as Admin
+
+> Username to delete: 

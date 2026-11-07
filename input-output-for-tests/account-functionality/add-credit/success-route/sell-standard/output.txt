@@ -1,5 +1,0 @@
-addcredit: approved;
-target_username_prompt: false;
-seller_credit: 110.00;
-final_session: null;
-records.length: 2;

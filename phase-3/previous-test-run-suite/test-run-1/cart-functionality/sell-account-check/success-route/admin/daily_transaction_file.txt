@@ -1,0 +1,2 @@
+03  Admin $30.00 NewGame
+00 Admin           AA 000100.00

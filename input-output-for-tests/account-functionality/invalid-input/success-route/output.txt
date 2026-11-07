@@ -1,4 +1,0 @@
-command_function: approved;
-buyer_credit: 110.00;
-final_session: null;
-records.length: 2;

@@ -1,0 +1,2 @@
+03  Buyer $30.00 NewGame
+00 Buyer           BS 000100.00

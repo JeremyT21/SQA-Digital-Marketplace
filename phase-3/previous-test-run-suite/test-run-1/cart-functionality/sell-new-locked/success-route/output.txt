@@ -1,0 +1,11 @@
+marketplace type help for commands
+
+> username: logged in as Buyer
+
+> Seller | seller: NewGame | $0.30
+
+> Game title: Seller username: Bought NewGame from Seller.
+
+> logged out
+
+> 

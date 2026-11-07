@@ -1,0 +1,2 @@
+04 Buyer MissingUser $0.00 
+00 Buyer           BS 000100.00
